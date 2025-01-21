@@ -83,10 +83,50 @@ nav .contact-button {
   background-color: var(--color-orange);
   padding: 10px 60px;
   border-radius: 0.75rem;
+  font-weight: 600;
 }
 
 nav .bars {
   display: none;
+}
+
+/* banner section styles */
+.banner-section {
+  gap: 50px;
+  align-items: center;
+}
+
+.banner-section .text-container {
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--color-pure-black);
+  align-items: start;
+}
+
+.banner-section .text-container .banner-title {
+  line-height: 3.75rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.banner-section .text-container .banner-title .orange-text {
+  color: var(--color-orange);
+}
+
+.banner-section .text-container .banner-title .sky-blue-text {
+  color: var(--color-sky-blue);
+}
+
+.banner-section .text-container .banner-description {
+  font-size: 1.25rem;
+}
+
+.banner-section .text-container .enroll-button {
+  text-decoration: none;
+  background-color: var(--color-pure-black);
+  color: var(--color-pure-white);
+  padding: 10px 3rem;
+  border-radius: 0.75rem;
 }
 
 /* responsive media query */
@@ -102,7 +142,9 @@ nav .bars {
     margin: 0;
   }
 
-  nav .logo-container .logo-text {
+  nav .logo-container .logo-text,
+  nav .contact-button,
+  nav .nav-links {
     display: none;
   }
 
@@ -110,8 +152,39 @@ nav .bars {
     display: block;
   }
 
-  nav .contact-button,
-  nav .nav-links {
-    display: none;
+  .banner-section {
+    flex-direction: column-reverse;
+    margin-top: 0.5rem;
+    gap: 1.25rem;
+  }
+
+  .banner-section .image-container {
+    padding: 1.25rem 10px;
+  }
+
+  .banner-section .image-container img {
+    width: 100%;
+  }
+
+  .banner-section .text-container {
+    align-items: center;
+    text-align: center;
+    gap: 1.125rem;
+  }
+
+  .banner-section .text-container .banner-title {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .banner-section .text-container .banner-description {
+    font-size: 14px;
+  }
+
+  .banner-section .text-container .enroll-button {
+    border-radius: 0.5rem;
+    padding: 6px 1.5rem;
+    line-height: 30px;
+    font-size: 1rem;
   }
 }
