@@ -333,6 +333,81 @@ nav .bars {
   border-radius: 0.875rem;
 }
 
+/* Footer styles */
+footer {
+  padding-left: 140px;
+  padding-top: 124px;
+  padding-bottom: 174px;
+  background-color: var(--color-sky-blue);
+
+  color: var(--color-pure-white);
+  flex-wrap: wrap;
+}
+
+.company-info,
+.site-details {
+  flex: 1;
+}
+
+footer .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.footer-logo-text {
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.company-description {
+  max-width: 400px;
+  font-size: 1.25rem;
+}
+
+.site-details {
+  gap: 144px;
+  flex-wrap: wrap;
+}
+
+.sitemap,
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-item-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sitemap-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.sitemap-item {
+  text-decoration: none;
+  color: var(--color-pure-white);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.social-medias {
+  gap: 0.625rem;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   header {
@@ -468,5 +543,14 @@ nav .bars {
 
   .view-all-button {
     font-size: 1rem;
+  }
+
+  footer {
+    padding: 3.75rem 1rem;
+    gap: 2rem;
+  }
+
+  .site-details {
+    gap: 2rem;
   }
 }
