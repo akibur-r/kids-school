@@ -422,7 +422,8 @@ footer .logo-container {
   margin-top: 0;
   padding: 1rem;
 
-  animation: marquee 10s linear infinite;
+  /* animation: marquee 10s linear infinite; */
+  overflow: hidden;
 }
 
 @keyframes marquee {
