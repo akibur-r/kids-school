@@ -421,18 +421,6 @@ footer .logo-container {
 .marquee {
   margin-top: 0;
   padding: 1rem;
-
-  /* animation: marquee 10s linear infinite; */
-  overflow: hidden;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 /* responsive media query */
