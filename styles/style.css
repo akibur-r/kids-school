@@ -35,8 +35,7 @@ body {
   display: flex;
 }
 
-header,
-main {
+header {
   margin: 0 140px;
 }
 
@@ -152,12 +151,17 @@ nav .bars {
 
 /* curriculum section */
 .curriculum-section {
+  padding: 0 140px;
+  background: url("../assets/bg.png");
+  background-position: right bottom;
+}
+
+.section-content {
   padding: 5rem 0;
   flex-direction: column;
   align-items: center;
   gap: 3.75rem;
   justify-content: center;
-  background: url("../assets/bg.png");
 }
 
 .curriculum-section .curriculum-card-container {
@@ -231,8 +235,7 @@ nav .bars {
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-  header,
-  main {
+  header {
     margin: 0;
   }
 
@@ -293,6 +296,10 @@ nav .bars {
   }
 
   .curriculum-section {
+    padding: 0 0;
+    background: none;
+  }
+  .section-content {
     gap: 0px;
     padding: 0;
     background: none;
