@@ -420,7 +420,7 @@ footer .logo-container {
 
 .marquee {
   margin-top: 0;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 /* responsive media query */
