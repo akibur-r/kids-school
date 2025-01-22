@@ -231,6 +231,12 @@ nav .bars {
   font-size: 1.5rem;
   color: var(--color-pure-white);
   cursor: pointer;
+
+  transition: background-color ease-in-out 0.25s;
+}
+
+.next-prev-button:hover {
+  background-color: var(--color-purple-light);
 }
 
 /* stories section */
@@ -408,6 +414,26 @@ footer .logo-container {
   gap: 0.625rem;
 }
 
+.hidden-story-in-desktop {
+  display: none;
+}
+
+.marquee {
+  margin-top: 0;
+  padding: 1rem;
+
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   header {
@@ -539,6 +565,7 @@ footer .logo-container {
   .stories-container .story .date {
     font-size: 0.5rem;
     left: 1rem;
+    padding: 0.375rem 0.875rem;
   }
 
   .view-all-button {
@@ -548,9 +575,19 @@ footer .logo-container {
   footer {
     padding: 3.75rem 1rem;
     gap: 2rem;
+    flex-direction: column;
   }
 
   .site-details {
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .banner-section .text-container .banner-description {
+    padding: 0 1rem;
+  }
+
+  .hidden-story-in-desktop {
+    display: block;
   }
 }
