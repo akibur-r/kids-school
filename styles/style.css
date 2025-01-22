@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--color-white);
+}
+
 /* Shared styles */
 .display-flex {
   display: flex;
@@ -153,6 +157,7 @@ nav .bars {
   align-items: center;
   gap: 3.75rem;
   justify-content: center;
+  background: url("../assets/bg.png");
 }
 
 .curriculum-section .curriculum-card-container {
@@ -290,6 +295,7 @@ nav .bars {
   .curriculum-section {
     gap: 0px;
     padding: 0;
+    background: none;
   }
 
   section {
